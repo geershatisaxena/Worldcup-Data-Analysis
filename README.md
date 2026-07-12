@@ -1,44 +1,74 @@
 <div align="center">
 
-# ⚽ FIFA World Cup Data Analysis (1930 – 2022)
-### A Comprehensive Statistical & Visual Deep-Dive into 92 Years of Football History
+<img src="https://readme-typing-svg.demolab.com?font=Righteous&size=38&duration=3000&pause=1000&color=2ECC71&center=true&vCenter=true&width=850&height=70&lines=FIFA+WORLD+CUP+DATA+ANALYSIS;92+YEARS+OF+FOOTBALL+HISTORY;22+EDITIONS+%C2%B7+964+MATCHES+%C2%B7+211+TEAMS;1930+%E2%86%92+2022" alt="Animated Title" />
 
-`Analysis Type: Exploratory Data Analysis` · `Domain: Sports Analytics` · `Scope: 1930–2022` · `Editions Covered: 22`
+<br>
 
-`Datasets: 3` · `Total Matches Analyzed: 964` · `Teams Tracked: 211` · `Status: ✅ Complete`
+<img src="https://img.shields.io/badge/⚽_Editions-22-2ECC71?style=for-the-badge&labelColor=0B3D24" />
+<img src="https://img.shields.io/badge/🗓️_Span-1930--2022-F5B700?style=for-the-badge&labelColor=0A1128" />
+<img src="https://img.shields.io/badge/📊_Matches-964-3AA0FF?style=for-the-badge&labelColor=0A1128" />
+<img src="https://img.shields.io/badge/🌍_Teams-211-EF4444?style=for-the-badge&labelColor=0A1128" />
+<img src="https://img.shields.io/badge/✅_Status-Complete-2ECC71?style=for-the-badge&labelColor=0B3D24" />
 
----
+<br><br>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=2600&pause=900&color=F5B700&center=true&vCenter=true&width=760&height=30&lines=%F0%9F%8F%86+Brazil+%E2%80%94+5+titles%2C+7+finals;%E2%9A%A1+Just+Fontaine+%E2%80%94+13+goals+in+1958;%F0%9F%8E%9F%EF%B8%8F+USA+1994+%E2%80%94+highest+ever+avg.+attendance;%F0%9F%8C%8D+36.5%25+of+ranked+teams+rose+in+Oct+2022" alt="Ticker" />
 
 </div>
 
-> 📌 **About this report**: This document is a professional restructuring and narrative expansion of a Jupyter Notebook that analyzed three interconnected FIFA World Cup datasets — historical champions (1930–2022), the October 2022 FIFA World Ranking, and match-level results spanning nine decades. It is designed to be both a technical EDA reference and a readable sports-analytics story.
+---
+
+> 📌 **About this report**: A professional restructuring and narrative expansion of a Jupyter Notebook that analyzed three FIFA World Cup datasets — historical champions (1930–2022), the October 2022 FIFA World Ranking, and match-level results spanning nine decades.
 
 ---
 
 ## 🧾 Executive Summary
 
-- 🏆 **Brazil is the undisputed king of the tournament** — the only nation with 5 titles, 7 final appearances, and the record for both most home goals scored and most matches played (103).
-- 🥇 **Just Fontaine's 13-goal haul at the 1958 World Cup** remains the most goals scored by a single player in one edition — a record that has stood for over 65 years and is unlikely to ever be broken under the current match-count format.
-- 📈 **Tournament scale has grown four-fold**: from 18 matches in 1930 to a steady 64 matches per edition since 1998, reflecting the expansion from 13–16 teams to 32.
-- 🇺🇸 **The 1994 USA World Cup is the attendance outlier** — despite having fewer matches (52) than every edition from 2002 onward (64), it recorded the **highest average attendance per match (68,991)** in tournament history, a testament to American stadium capacity and market scale.
-- 🌍 **FIFA rankings (Oct 2022) show real mobility**: 36.5% of the 211 ranked teams improved their position, 32.2% dropped, and only 31.3% held steady — indicating the ranking table is anything but static.
+<table>
+<tr>
+<td width="20%" align="center">🏆</td>
+<td><b>Brazil is the undisputed king of the tournament</b> — the only nation with 5 titles, 7 final appearances, and the record for both most home goals scored and most matches played (103).</td>
+</tr>
+<tr>
+<td align="center">⚡</td>
+<td><b>Just Fontaine's 13-goal haul at the 1958 World Cup</b> remains the most goals scored by a single player in one edition — a record that has stood for over 65 years.</td>
+</tr>
+<tr>
+<td align="center">📈</td>
+<td><b>Tournament scale has grown four-fold</b> — from 18 matches in 1930 to a steady 64 matches per edition since 1998, reflecting expansion from 13–16 teams to 32.</td>
+</tr>
+<tr>
+<td align="center">🇺🇸</td>
+<td><b>1994 USA is the attendance outlier</b> — fewer matches (52) than every edition from 2002 onward (64), yet the <b>highest average attendance per match (68,991)</b> in history.</td>
+</tr>
+<tr>
+<td align="center">🌍</td>
+<td><b>FIFA rankings (Oct 2022) show real mobility</b> — 36.5% of 211 teams improved, 32.2% dropped, and only 31.3% held steady.</td>
+</tr>
+</table>
 
 ---
 
 ## 📚 Table of Contents
 
-1. [Introduction](#1-introduction)
-2. [Data Overview & Exploratory Data Analysis](#2-data-overview--exploratory-data-analysis-eda)
-3. [Key Findings & Insights](#3-key-findings--insights)
-4. [Visualizations Analysis](#4-visualizations-analysis)
-5. [Advanced Analysis & Statistical Insights](#5-advanced-analysis--statistical-insights)
-6. [Conclusions & Recommendations](#6-conclusions--recommendations)
-7. [Limitations & Future Work](#7-limitations--future-work)
-8. [Appendix](#8-appendix)
+<div align="center">
+
+[![Intro](https://img.shields.io/badge/1-Introduction-0D5C34?style=flat-square)](#1-introduction)
+[![EDA](https://img.shields.io/badge/2-Data_%26_EDA-1F8F4F?style=flat-square)](#2-data-overview--exploratory-data-analysis-eda)
+[![Findings](https://img.shields.io/badge/3-Key_Findings-2ECC71?style=flat-square)](#3-key-findings--insights)
+[![Viz](https://img.shields.io/badge/4-Visualizations-F5B700?style=flat-square)](#4-visualizations-analysis)
+[![Advanced](https://img.shields.io/badge/5-Advanced_Analysis-D99400?style=flat-square)](#5-advanced-analysis--statistical-insights)
+[![Conclusions](https://img.shields.io/badge/6-Conclusions-3AA0FF?style=flat-square)](#6-conclusions--recommendations)
+[![Limitations](https://img.shields.io/badge/7-Limitations-EF4444?style=flat-square)](#7-limitations--future-work)
+[![Appendix](https://img.shields.io/badge/8-Appendix-0A1128?style=flat-square)](#8-appendix)
+
+</div>
 
 ---
 
 ## 1. Introduction
+
+<img src="https://img.shields.io/badge/SECTION-01-2ECC71?style=flat-square&labelColor=0A1128" />
 
 ### 🎯 Objective of the Analysis
 
@@ -53,24 +83,26 @@ The analysis blends **historical tournament records** with a **snapshot of curre
 
 ### 🗂️ Dataset Description
 
-Three distinct datasets were combined to power this analysis:
-
 | Dataset | File | Rows | Key Columns | Time Span |
-|---|---|---|---|---|
+|---|---|---:|---|---|
 | 🏆 World Cup Champions | `world_cup.csv` | 22 | Year, Host, Teams, Champion, Runner-Up, Top Scorer, Attendance, AttendanceAvg, Matches | 1930 – 2022 |
 | 🌍 FIFA World Ranking | `fifa_ranking_2022-10-06.csv` | 211 | Team, Association, Rank, Previous Rank, Points, Previous Points | Snapshot: Oct 6, 2022 |
-| ⚽ Match Results | `matches_1930_2022.csv` | 964 | Home/Away Team, Score, Managers, Captains, Attendance, Venue, Round, Referee, Goals, Cards, Substitutions | 1930 – 2022 |
+| ⚽ Match Results | `matches_1930_2022.csv` | 964 | Home/Away Team, Score, Managers, Captains, Attendance, Venue, Round, Referee, Goals, Cards | 1930 – 2022 |
 
-> 💡 **Note:** Each of the 22 World Cup editions is represented once in the champions dataset (one row per tournament), while the matches dataset captures **every individual match** ever played across all 22 editions — 964 matches in total.
+> 💡 **Note:** Each of the 22 World Cup editions is represented once in the champions dataset, while the matches dataset captures **every individual match** ever played across all 22 editions — 964 matches in total.
 
 ---
 
 ## 2. Data Overview & Exploratory Data Analysis (EDA)
 
+<img src="https://img.shields.io/badge/SECTION-02-1F8F4F?style=flat-square&labelColor=0A1128" />
+
 ### 🔍 Shape, Duplicates & Missing Values
 
 <details>
 <summary><strong>📊 Click to expand: Dataset-by-dataset EDA summary</strong></summary>
+
+<br>
 
 **Champions Dataset (`world_cup.csv`)**
 - 22 rows × 8 original columns
@@ -78,24 +110,26 @@ Three distinct datasets were combined to power this analysis:
 - No explicit missing-value or duplicate-check was needed given the dataset's small, curated size
 
 **FIFA Ranking Dataset (`fifa_ranking_2022-10-06.csv`)**
+
+![clean](https://img.shields.io/badge/Duplicates-0-2ECC71?style=flat-square) ![clean](https://img.shields.io/badge/Missing_Values-0-2ECC71?style=flat-square)
+
 - 211 rows × 7 original columns (→ 6 after dropping the redundant `team_code` column)
-- ✅ **Zero duplicate rows**
-- ✅ **Zero missing values** across all columns — a fully clean dataset
 - `team` and `rank` both contain exactly 211 unique values, confirming a one-to-one team-to-rank mapping
 
 **Matches Dataset (`matches_1930_2022.csv`)**
+
+![clean](https://img.shields.io/badge/Duplicates-0-2ECC71?style=flat-square) ![warn](https://img.shields.io/badge/Heavy_Missingness-xG_%26_Penalty_Fields-EF4444?style=flat-square)
+
 - 964 rows × 44 original columns
-- ✅ **Zero duplicate rows**
-- ⚠️ **Significant missingness** in advanced/modern metrics: columns like `home_xg`, `away_xg`, `home_penalty`, `away_penalty`, and shootout/red-card detail fields were missing in **more than 50% of rows** — a direct consequence of expected-goals (xG) and detailed event tracking only being recorded in recent tournaments
+- Significant missingness in advanced/modern metrics: `home_xg`, `away_xg`, `home_penalty`, `away_penalty`, and shootout/red-card detail fields were missing in **more than 50% of rows** — a direct consequence of expected-goals (xG) and detailed event tracking only being recorded in recent tournaments
 - Columns exceeding the 50% missing-value threshold were **programmatically dropped**, reducing the working dataset to a leaner, higher-quality set of 25 columns
 
 </details>
 
 #### 📉 Missing Data Visualization
 
-> The notebook produced a horizontal bar chart plotting the **percentage of missing values per column** in the matches dataset. Columns such as `home_xg`, `away_xg`, `home_penalty`, and `away_penalty` towered above the 80–95% missing mark, while core fields (`home_team`, `away_team`, `home_score`, `away_score`, `Date`, `Year`) showed **0% missingness** — confirming the foundational scoreline data is fully reliable even where advanced analytics fields are not.
+> The notebook produced a horizontal bar chart plotting the **percentage of missing values per column** in the matches dataset. Columns such as `home_xg`, `away_xg`, `home_penalty`, and `away_penalty` towered above the 80–95% missing mark, while core fields (`home_team`, `away_team`, `home_score`, `away_score`, `Date`, `Year`) showed **0% missingness**.
 
-**Key Takeaway Box:**
 > ✅ **Data Quality Verdict**: All three datasets are duplicate-free. The ranking dataset is pristine (no nulls). The matches dataset requires selective column-pruning due to historical data-collection gaps — a completely expected pattern for a 92-year time series where modern analytics (xG, VAR-era penalty tracking) simply didn't exist for early tournaments.
 
 ### 📈 Statistical Summary (FIFA Ranking Points)
@@ -108,9 +142,17 @@ Three distinct datasets were combined to power this analysis:
 
 This ~1,079-point spread between #1 and #211 illustrates the steep competitive gradient in international football — Brazil's points total is roughly **2.4× higher** than San Marino's.
 
+```
+Brazil        ████████████████████████████████████████  1841.3
+Global Avg     ███████████████████████████               1220.7
+San Marino     ███████████                                762.2
+```
+
 ---
 
 ## 3. Key Findings & Insights
+
+<img src="https://img.shields.io/badge/SECTION-03-2ECC71?style=flat-square&labelColor=0A1128" />
 
 ### 🏆 Historical Performance of Top Teams
 
@@ -120,31 +162,30 @@ This ~1,079-point spread between #1 and #211 illustrates the steep competitive g
 
 ### ⚽ Goal Trends & Scoring Patterns
 
-- The **Golden Boot leaderboard** is dominated by an interesting mix of eras: **Just Fontaine (13 goals, 1958)** and **Sándor Kocsis (11 goals, 1954)** from football's early "high-scoring" decades sit well above modern top scorers like **Ronaldo and Mbappé (8 goals each)** — reflecting how tactical sophistication and defensive organization have tightened scoring ceilings over time.
+- The **Golden Boot leaderboard** is dominated by an interesting mix of eras: **Just Fontaine (13 goals, 1958)** and **Sándor Kocsis (11 goals, 1954)** from football's early "high-scoring" decades sit well above modern top scorers like **Ronaldo and Mbappé (8 goals each)**.
 - **Gerd Müller (10 goals, 1970)** and **Eusébio (9 goals, 1966)** further reinforce that the 1950s–1970s were the golden age of prolific individual scoring at the World Cup.
-- **Brazil is the top home-scoring nation** by a wide margin (~190 goals), nearly 60% more than second-placed Argentina — underscoring Brazil's attacking identity across generations of teams.
-- In **away scoring**, the gap narrows considerably: **Brazil, France, and Spain** are closely bunched near the top (~47–48 goals each), suggesting elite attacking talent travels well regardless of tournament venue.
+- **Brazil is the top home-scoring nation** by a wide margin (~190 goals), nearly 60% more than second-placed Argentina.
+- In **away scoring**, the gap narrows considerably: **Brazil, France, and Spain** are closely bunched near the top (~47–48 goals each).
 
 ### 🏟️ Tournament Scale & Attendance Analysis
 
 - Match count per edition has grown in three distinct "eras":
-  - **1930–1978**: 17–38 matches (13–16 team formats)
-  - **1982–1994**: 52 matches (24-team format)
-  - **1998–2022**: 64 matches (32-team format, now stable)
-- Despite fewer matches, **1994 (USA)** recorded the tournament's **highest-ever average attendance per match (68,991)** — even surpassing every edition from 2002 to 2022, each of which hosted 12 more matches. This is best explained by the sheer scale of American stadiums and the tournament's novelty in a market with enormous population and stadium capacity.
-- **Host nation analysis** shows only five countries have hosted twice: **Brazil, Mexico, Germany, Italy, and France** — every other host nation (17 countries) has hosted exactly once, reflecting FIFA's rotation policy and the immense infrastructure cost of hosting.
+
+```
+1930–1978   ████████                17–38 matches (13–16 teams)
+1982–1994   ████████████████        52 matches (24 teams)
+1998–2022   ████████████████████    64 matches (32 teams, stable)
+```
+
+- Despite fewer matches, **1994 (USA)** recorded the tournament's **highest-ever average attendance per match (68,991)** — even surpassing every edition from 2002 to 2022.
+- **Host nation analysis** shows only five countries have hosted twice: **Brazil, Mexico, Germany, Italy, and France** — every other host nation (17 countries) has hosted exactly once.
 
 ### 🏠 Home Advantage & Match-Level Analysis
 
-- **Brazil has played more World Cup matches (103) than any other nation**, roughly 15 more than second-placed Argentina (88) — a direct function of their unmatched qualification consistency (they've never failed to qualify) combined with deep tournament runs.
-- At the opposite end, nations like **Dutch East Indies (1 match)**, **Zaire, Trinidad and Tobago, UAE, Qatar, and Iceland (3 matches each)** represent single-appearance or early-elimination stories — snapshots of football's global underdogs.
-- **Defensive resilience** tells a different story than attacking output: Brazil, Argentina, and Mexico also appear among the **most goals conceded**, a natural consequence of playing the most matches and often facing the toughest knockout-stage opposition.
-- Teams like **Angola, Israel, and Iraq** show the **fewest goals conceded**, largely because of their limited number of tournament appearances rather than superior defense — a reminder that raw counts must always be read alongside match volume.
-
-### 🌍 Player & Nation Deep-Dives
-
-- **Just Fontaine's case study** (highlighted explicitly in the source notebook) is particularly compelling: despite his record 13 goals, **France finished as runner-up in 1958**, losing the final to Brazil — proving individual brilliance doesn't guarantee team success.
-- **1994's anomaly** (fewer matches, more attendance) was specifically investigated in the notebook and attributed to the United States' large population, stadium infrastructure, and multi-ethnic fan base drawing record crowds despite the smaller 24-team format.
+- **Brazil has played more World Cup matches (103) than any other nation**, roughly 15 more than second-placed Argentina (88).
+- At the opposite end, nations like **Dutch East Indies (1 match)**, **Zaire, Trinidad and Tobago, UAE, Qatar, and Iceland (3 matches each)** represent single-appearance or early-elimination stories.
+- **Defensive resilience** tells a different story than attacking output: Brazil, Argentina, and Mexico also appear among the **most goals conceded**, a natural consequence of playing the most matches.
+- Teams like **Angola, Israel, and Iraq** show the **fewest goals conceded**, largely because of their limited number of tournament appearances rather than superior defense.
 
 > **🔑 Key Takeaway**: Team success at the World Cup is multidimensional — trophy counts, final appearances, goals scored, goals conceded, and matches played each tell a different part of the story. Brazil consistently leads on nearly every dimension, but the runner-up and scoring-trend data reveal deep nuance beneath the top-line titles table.
 
@@ -152,176 +193,181 @@ This ~1,079-point spread between #1 and #211 illustrates the steep competitive g
 
 ## 4. Visualizations Analysis
 
+<img src="https://img.shields.io/badge/SECTION-04-F5B700?style=flat-square&labelColor=0A1128" />
+
 Below is a structured breakdown of every major visualization produced in the source notebook, along with the insight each one delivers.
 
-### 📊 4.1 Top Scorers and Their Goals (Horizontal Bar Chart)
+### 📊 4.1 Top Scorers and Their Goals
 
 ![Top Scorers and Their Goals](images/top_scorers_goals.png)
 
-- **What it shows**: Every World Cup's top scorer plotted against their goal tally, ordered chronologically (2022 → 1930).
-- **Key takeaway**: Just Fontaine's 13-goal 1958 campaign is a clear outlier at the top of the range; most modern top scorers cluster around 6–8 goals.
-- **Insight**: The chart visually confirms a *declining ceiling* for individual scoring, driven by tighter defensive tactics and fewer total matches per player compared to the mid-20th century.
-- **Suggested improved title**: *"Golden Boot Winners Across 22 World Cups: The Fontaine Anomaly"*
+![What](https://img.shields.io/badge/WHAT-Chart_Shows-3AA0FF?style=flat-square) Every World Cup's top scorer plotted against their goal tally, ordered chronologically (2022 → 1930).
+
+![Takeaway](https://img.shields.io/badge/KEY-Takeaway-D99400?style=flat-square) Just Fontaine's 13-goal 1958 campaign is a clear outlier at the top of the range; most modern top scorers cluster around 6–8 goals.
+
+![Insight](https://img.shields.io/badge/SPORTS-Insight-0D5C34?style=flat-square) The chart visually confirms a *declining ceiling* for individual scoring, driven by tighter defensive tactics.
+
+> 💬 Suggested improved title: *"Golden Boot Winners Across 22 World Cups: The Fontaine Anomaly"*
 
 ### 🏆 4.2 Teams with the Most World Cup Wins
 
 ![World Cup Wins by Team](images/wins_by_team.png)
 
-- **What it shows**: A ranked bar chart of every World Cup–winning nation and their total title count.
-- **Key takeaway**: Brazil sits clearly above the pack, followed by Italy and Argentina, with a tightly bunched second tier (Germany, France, Uruguay, West Germany).
-- **Insight**: Only 8 nations have *ever* won the World Cup in 22 editions — a striking concentration of success at the very top of international football.
-- **Suggested improved title**: *"The Exclusive Club: 8 Nations, 22 Titles"*
+A ranked bar chart of every World Cup–winning nation and their total title count. Brazil sits clearly above the pack, followed by Italy and Argentina, with a tightly bunched second tier (Germany, France, Uruguay, West Germany). Only **8 nations** have *ever* won the World Cup in 22 editions.
+
+> 💬 Suggested improved title: *"The Exclusive Club: 8 Nations, 22 Titles"*
 
 ### 🥈 4.3 Teams with the Most Runner-Up Finishes
 
 ![Runner-Up Finishes](images/runner_up_finishes.png)
 
-- **What it shows**: Nations ranked by number of World Cup final losses.
-- **Key takeaway**: Argentina, West Germany, and the Netherlands share the top spot with 3 runner-up finishes each.
-- **Insight**: The Netherlands' presence at the top — with **zero titles** — makes them the most notable "nearly team" in World Cup history.
-- **Suggested improved title**: *"So Close: The Nations That Reached the Final Most, Without the Trophy"*
+Nations ranked by number of World Cup final losses. Argentina, West Germany, and the Netherlands share the top spot with 3 runner-up finishes each. The Netherlands' presence — with **zero titles** — makes them the most notable "nearly team" in World Cup history.
+
+> 💬 Suggested improved title: *"So Close: The Nations That Reached the Final Most, Without the Trophy"*
 
 ### 🎯 4.4 Teams with the Most World Cup Final Appearances
 
 ![Final Appearances](images/final_appearances.png)
 
-- **What it shows**: Combined champion + runner-up appearances per nation, merging the two prior charts into one aggregate view.
-- **Key takeaway**: Brazil (7), Argentina and Italy (6 each), and West Germany (5) form the tournament's true "final four" of consistency.
-- **Insight**: This combined metric is arguably a better proxy for *sustained excellence* than raw title counts alone, since it rewards teams that consistently reach football's biggest match.
-- **Suggested improved title**: *"The Finalist Elite: Who Reaches the Big Match Most Often?"*
+Combined champion + runner-up appearances per nation. Brazil (7), Argentina and Italy (6 each), and West Germany (5) form the tournament's true "final four" of consistency.
+
+> 💬 Suggested improved title: *"The Finalist Elite: Who Reaches the Big Match Most Often?"*
 
 ### 🎟️ 4.5 Total Attendance of FIFA World Cup Versions
 
 ![Total Attendance](images/total_attendance.png)
 
-- **What it shows**: Aggregate tournament attendance by year, 1930–2022.
-- **Key takeaway**: A clear upward trend from under 600,000 total attendees in 1930 to well above 3 million from the 1990s onward.
-- **Insight**: Growth in total attendance tracks closely with the expansion of tournament size (more teams → more matches → more cumulative attendance).
-- **Suggested improved title**: *"From Uruguay to Qatar: The Growth of World Cup Attendance"*
+Aggregate tournament attendance by year, 1930–2022. Clear upward trend from under 600,000 total attendees in 1930 to well above 3 million from the 1990s onward.
+
+> 💬 Suggested improved title: *"From Uruguay to Qatar: The Growth of World Cup Attendance"*
 
 ### 📐 4.6 Attendance Average of FIFA World Cup Versions
 
 ![Average Attendance](images/average_attendance.png)
 
-- **What it shows**: Per-match average attendance by year — a normalized view that controls for the varying number of matches.
-- **Key takeaway**: **1994 (USA) stands out dramatically**, with an average of ~68,991 attendees per match, the highest in tournament history, even above recent editions in Qatar, Russia, and Brazil.
-- **Insight**: This is the notebook's most important discovery — raw match counts (4.7 below) don't tell the full attendance story.
-- **Suggested improved title**: *"The 1994 Anomaly: Why the USA World Cup Still Holds the Attendance Record"*
+Per-match average attendance by year. **1994 (USA) stands out dramatically**, with an average of ~68,991 attendees per match, the highest in tournament history.
+
+> 💬 Suggested improved title: *"The 1994 Anomaly: Why the USA World Cup Still Holds the Attendance Record"*
 
 ### 🗓️ 4.7 Number of Matches in FIFA World Cup Versions
 
 ![Matches per Edition](images/matches_per_edition.png)
 
-- **What it shows**: Total matches played per tournament edition.
-- **Key takeaway**: A clear step-function pattern — 17–38 matches (1930–1978), 52 matches (1982–1994), 64 matches (1998–2022, stable ever since).
-- **Insight**: This chart, read alongside 4.6, is what reveals the 1994 anomaly — fewer matches did not mean fewer fans per match.
-- **Suggested improved title**: *"Tournament Expansion: From 18 to 64 Matches Per World Cup"*
+A clear step-function pattern — 17–38 matches (1930–1978), 52 matches (1982–1994), 64 matches (1998–2022, stable ever since).
+
+> 💬 Suggested improved title: *"Tournament Expansion: From 18 to 64 Matches Per World Cup"*
 
 ### 🌍 4.8 Number of Times Each Country Has Hosted the World Cup
 
 ![Hosting Frequency](images/hosting_frequency.png)
 
-- **What it shows**: A count of hosting appearances by nation.
-- **Key takeaway**: Only five nations — Brazil, Mexico, Germany, Italy, and France — have hosted twice; all others (17 nations) have hosted once.
-- **Insight**: FIFA's rotation policy and the enormous infrastructure investment required for hosting keep repeat-hosting rare.
-- **Suggested improved title**: *"Hosting Rights: A Short List of Repeat World Cup Hosts"*
+Only five nations — Brazil, Mexico, Germany, Italy, and France — have hosted twice; all others (17 nations) have hosted once.
+
+> 💬 Suggested improved title: *"Hosting Rights: A Short List of Repeat World Cup Hosts"*
 
 ### 🔝 4.9 Top 10 & 🔻 Bottom 10 Ranked Teams (FIFA Rankings, Oct 2022)
 
 ![Top and Bottom 10 FIFA Rankings](images/top_bottom_10_rankings.png)
 
-- **What it shows**: Two horizontal bar charts — the 10 highest-ranked teams (Brazil down to Denmark) and the 10 lowest-ranked (San Marino up to Bahamas).
-- **Key takeaway**: The top 10 reads like a "usual suspects" list of football powerhouses; the bottom 10 is composed of micro-nations and territories with minimal football infrastructure (San Marino, Anguilla, British/US Virgin Islands).
-- **Insight**: The 200+ rank gap between #1 (Brazil, 1841.3 pts) and #211 (San Marino, 762.22 pts) illustrates just how wide the global competitive spectrum really is.
-- **Suggested improved title**: *"Football's Two Extremes: FIFA's Elite Ten vs. the Final Ten"*
+The top 10 reads like a "usual suspects" list of football powerhouses; the bottom 10 is composed of micro-nations and territories with minimal football infrastructure.
 
-### 🥧 4.10 Team Rank Changes (Pie Chart)
+> 💬 Suggested improved title: *"Football's Two Extremes: FIFA's Elite Ten vs. the Final Ten"*
 
-![Rank Change Distribution](images/rank_change_pie.png)
+### 🥧 4.10 Team Rank Changes
 
-- **What it shows**: Proportion of teams whose FIFA ranking rose, fell, or stayed the same versus the previous update.
-- **Key takeaway**: 36.5% of teams (77) improved their rank, 32.2% (68) dropped, and 31.3% (66) were unchanged.
-- **Insight**: Nearly 70% of the global rankings shifted in a single update cycle — the FIFA ranking system is highly dynamic, not a static leaderboard.
-- **Suggested improved title**: *"The Ranking Shuffle: More Movers Than Stayers"*
+<div align="center">
+
+![Up](https://progress-bar.dev/36/?title=📈%20Up%20(77%20teams)&width=400&color=2ecc71)
+![Down](https://progress-bar.dev/32/?title=📉%20Down%20(68%20teams)&width=400&color=ef4444)
+![Flat](https://progress-bar.dev/31/?title=➖%20Unchanged%20(66%20teams)&width=400&color=3aa0ff)
+
+</div>
+
+36.5% of teams (77) improved their rank, 32.2% (68) dropped, and 31.3% (66) were unchanged. Nearly 70% of the global rankings shifted in a single update cycle.
+
+> 💬 Suggested improved title: *"The Ranking Shuffle: More Movers Than Stayers"*
 
 ### 🌎 4.11 Distribution of Teams by Association (Confederation)
 
 ![Teams by Confederation](images/teams_by_association.png)
 
-- **What it shows**: Count of ranked national teams grouped by continental confederation (UEFA, CAF, AFC, CONCACAF, CONMEBOL, OFC).
-- **Key takeaway**: UEFA, CAF, and AFC each field the largest number of member associations, while CONMEBOL (South America) has by far the fewest (only 10) — a reflection of the continent's small number of countries, not its footballing quality.
-- **Insight**: This chart is an important reminder that **CONMEBOL's outsized World Cup success (Brazil, Argentina, Uruguay) comes from just 10 nations**, making it statistically the most "efficient" confederation per capita of member states.
-- **Suggested improved title**: *"Quality Over Quantity: CONMEBOL's 10 Nations vs. the World"*
+UEFA, CAF, and AFC each field the largest number of member associations, while CONMEBOL (South America) has by far the fewest (only 10) — CONMEBOL's outsized World Cup success from just 10 nations makes it statistically the most "efficient" confederation per capita of member states.
+
+> 💬 Suggested improved title: *"Quality Over Quantity: CONMEBOL's 10 Nations vs. the World"*
 
 ### 🧮 4.12 Percentage of Missing Values (Matches Dataset)
 
-![Missing Values Heatmap-Style Bar Chart](images/missing_values_chart.png)
+![Missing Values Chart](images/missing_values_chart.png)
 
-- **What it shows**: Percentage missing per column across the 44 original match-level fields.
-- **Key takeaway**: Advanced metrics (xG, penalty shootout detail, red/yellow-red cards) are missing in 80–95%+ of rows, while core scoreline fields have 0% missingness.
-- **Insight**: This is a textbook illustration of **survivorship bias in sports data collection** — richer statistical tracking only became standard in the 21st century.
-- **Suggested improved title**: *"Data Through the Decades: Why Early World Cups Lack Modern Stats"*
+Advanced metrics (xG, penalty shootout detail, cards) are missing in 80–95%+ of rows, while core scoreline fields have 0% missingness — a textbook illustration of survivorship bias in sports data collection.
+
+> 💬 Suggested improved title: *"Data Through the Decades: Why Early World Cups Lack Modern Stats"*
 
 ### 🥅 4.13 Team Match-Volume & Scoring Charts (Top/Bottom 10 series)
 
 ![Match Volume and Scoring Charts](images/match_volume_scoring.png)
 
-This group of charts (most matches played, fewest matches played, top/bottom home scorers, top/bottom away scorers, top/bottom goals conceded) collectively tells a **volume-adjusted performance story**:
+Six paired bar charts contrasting the most active/prolific nations against the least active/lowest-scoring nations. Brazil, Argentina, and Italy dominate nearly every "most" category simply by virtue of playing the most matches.
 
-- **What it shows**: Six paired bar charts contrasting the most active/prolific nations against the least active/lowest-scoring nations.
-- **Key takeaway**: Brazil, Argentina, and Italy dominate nearly every "most" category simply by virtue of playing the most matches, while one-off qualifiers (Dutch East Indies, Zaire, Iceland's early appearances) anchor the "least" categories.
-- **Insight**: Any team-level total (goals, matches, concessions) should ideally be **normalized per match** to enable fair cross-era comparison — a natural next step in this analysis (see Section 7).
-- **Suggested improved title**: *"Volume vs. Value: Reading World Cup Totals in Context"*
+> 💬 Suggested improved title: *"Volume vs. Value: Reading World Cup Totals in Context"*
 
 ---
 
 ## 5. Advanced Analysis & Statistical Insights
 
-- **Rank Volatility Metric**: The 36.5% / 32.2% / 31.3% split (up / down / unchanged) derived from the FIFA ranking dataset is a simple but effective volatility indicator — it could be extended into a "ranking stability index" per confederation to see which regions have the most turnover.
-- **Points-to-Rank Spread**: With a maximum of 1,841.30 points (Brazil) against an average of 1,220.69, elite teams sit roughly **51% above the global mean** — a useful benchmark for defining what statistically constitutes "elite" status in the FIFA points system.
-- **Attendance Normalization**: By comparing total attendance (4.5) against average attendance (4.6), the notebook effectively performed an implicit normalization exercise that surfaced the 1994 anomaly — a strong example of why per-unit metrics often reveal more than aggregate totals.
-- **Data Completeness Filtering**: The programmatic removal of columns exceeding 50% missingness (`if null_counts > 50: drop`) is a clean, reproducible data-hygiene pattern applicable to any long-horizon historical sports dataset.
+<img src="https://img.shields.io/badge/SECTION-05-D99400?style=flat-square&labelColor=0A1128" />
 
-> **🔑 Key Takeaway**: The most valuable analytical moves in this notebook weren't the raw counts themselves, but the **comparisons between related metrics** (matches vs. attendance, titles vs. finals reached, confederation size vs. World Cup success) — these juxtapositions are where the real insight emerged.
+- **Rank Volatility Metric**: The 36.5% / 32.2% / 31.3% split (up / down / unchanged) is a simple but effective volatility indicator — extendable into a "ranking stability index" per confederation.
+- **Points-to-Rank Spread**: With a maximum of 1,841.30 points (Brazil) against an average of 1,220.69, elite teams sit roughly **51% above the global mean**.
+- **Attendance Normalization**: Comparing total attendance against average attendance surfaced the 1994 anomaly — a strong example of why per-unit metrics often reveal more than aggregate totals.
+- **Data Completeness Filtering**: The programmatic removal of columns exceeding 50% missingness is a clean, reproducible data-hygiene pattern applicable to any long-horizon historical sports dataset.
+
+> **🔑 Key Takeaway**: The most valuable analytical moves in this notebook weren't the raw counts themselves, but the **comparisons between related metrics** — these juxtapositions are where the real insight emerged.
 
 ---
 
 ## 6. Conclusions & Recommendations
 
+<img src="https://img.shields.io/badge/SECTION-06-3AA0FF?style=flat-square&labelColor=0A1128" />
+
 ### ✅ Conclusions
 
 1. **Brazil remains the sport's benchmark franchise** across nearly every dimension measured — titles, finals, matches played, and home goals scored.
-2. **The World Cup's format expansion (16 → 24 → 32 teams)** has directly driven growth in total attendance and match count, but **per-match attendance is not purely a function of scale** — host-country infrastructure and market size (as seen in USA 1994) can outweigh raw match volume.
-3. **The FIFA ranking system is highly dynamic**, with more than two-thirds of teams shifting position in a single ranking cycle, reinforcing that current form matters as much as historical pedigree.
-4. **Historical scoring records (Fontaine, Kocsis) are effectively unbreakable** under the modern tournament structure, given fewer total matches per player and more sophisticated defensive systems.
+2. **The World Cup's format expansion** has directly driven growth in total attendance and match count, but **per-match attendance is not purely a function of scale**.
+3. **The FIFA ranking system is highly dynamic**, with more than two-thirds of teams shifting position in a single ranking cycle.
+4. **Historical scoring records (Fontaine, Kocsis) are effectively unbreakable** under the modern tournament structure.
 
 ### 💡 Recommendations
 
-- For **sports broadcasters/marketers**: The 1994 USA attendance anomaly suggests future host selection in large, football-hungry but non-traditional markets can still generate record per-match engagement — a data point worth revisiting for future hosting bids.
-- For **football analysts**: Normalize team performance metrics (goals, wins, matches) on a **per-tournament-appearance basis** rather than career totals, to enable fairer comparisons between nations with vastly different numbers of World Cup appearances.
-- For **federation strategists**: CONMEBOL's disproportionate success relative to its small membership size (10 nations) is worth deeper investigation as a possible development-pathway benchmark for other confederations.
+- For **sports broadcasters/marketers**: The 1994 USA attendance anomaly suggests future host selection in large, football-hungry but non-traditional markets can still generate record per-match engagement.
+- For **football analysts**: Normalize team performance metrics on a **per-tournament-appearance basis** rather than career totals.
+- For **federation strategists**: CONMEBOL's disproportionate success relative to its small membership size is worth deeper investigation as a possible development-pathway benchmark.
 
 ---
 
 ## 7. Limitations & Future Work
 
+<img src="https://img.shields.io/badge/SECTION-07-EF4444?style=flat-square&labelColor=0A1128" />
+
 > ⚠️ **Known Limitations**
 
-- **Missing advanced metrics** (xG, detailed penalty/card data) for pre-2000s matches limit the ability to perform consistent tactical or expected-goals analysis across the full 92-year history.
-- **Raw totals are not appearance-normalized** — teams with more World Cup appearances will naturally lead most "total" charts (matches, goals, concessions) regardless of relative quality.
-- **The FIFA ranking dataset is a single-day snapshot** (October 6, 2022) and does not capture ranking trends over time, limiting longitudinal ranking-trend analysis.
-- **Country name inconsistencies** (e.g., "West Germany" vs. "Germany") slightly fragment historical team performance totals and would benefit from standardization for cleaner aggregate reporting.
+- **Missing advanced metrics** (xG, detailed penalty/card data) for pre-2000s matches limit tactical analysis across the full 92-year history.
+- **Raw totals are not appearance-normalized** — teams with more World Cup appearances naturally lead most "total" charts.
+- **The FIFA ranking dataset is a single-day snapshot** (October 6, 2022), limiting longitudinal ranking-trend analysis.
+- **Country name inconsistencies** (e.g., "West Germany" vs. "Germany") slightly fragment historical performance totals.
 
 > 🔮 **Suggested Future Work**
 
-- Build a **per-appearance normalized leaderboard** (goals per match, wins per tournament entered) to complement the raw totals presented here.
-- Merge the ranking snapshot with **multiple historical ranking pulls** to build a true time-series view of national team trajectory.
-- Standardize historical nation names (West Germany → Germany, etc.) to produce a single unified "all-time Germany" performance record.
-- Incorporate **knockout-stage-specific analysis** (Round of 16 onward) to isolate high-pressure performance from group-stage form.
+- Build a **per-appearance normalized leaderboard** (goals per match, wins per tournament entered).
+- Merge the ranking snapshot with **multiple historical ranking pulls** to build a true time-series view.
+- Standardize historical nation names to produce a single unified "all-time Germany" performance record.
+- Incorporate **knockout-stage-specific analysis** to isolate high-pressure performance from group-stage form.
 
 ---
 
 ## 8. Appendix
+
+<img src="https://img.shields.io/badge/SECTION-08-0A1128?style=flat-square&labelColor=2ECC71" />
 
 ### 📎 8.1 Data Dictionary (Selected Key Fields)
 
@@ -360,10 +406,19 @@ champions['TopScorrer'] = champions['TopScorrer'].str.split(' - ').str[0]
 
 <div align="center">
 
-### 🏁 End of Report
+<img src="https://readme-typing-svg.demolab.com?font=Righteous&size=26&duration=3200&pause=1000&color=F5B700&center=true&vCenter=true&width=600&height=45&lines=END+OF+REPORT;THANK+YOU+FOR+READING" alt="End Banner" />
+
+<br>
+
+<img src="https://img.shields.io/badge/⚽_22_Editions-2ECC71?style=for-the-badge&labelColor=0B3D24" />
+<img src="https://img.shields.io/badge/🏆_8_Champion_Nations-F5B700?style=for-the-badge&labelColor=0A1128" />
+<img src="https://img.shields.io/badge/📊_964_Matches-3AA0FF?style=for-the-badge&labelColor=0A1128" />
+<img src="https://img.shields.io/badge/🌍_211_Teams-EF4444?style=for-the-badge&labelColor=0A1128" />
+
+<br><br>
 
 *Prepared as a professional Markdown restructuring of an exploratory Jupyter Notebook analysis on FIFA World Cup history (1930–2022).*
 
-⚽ **Data tells the story. Football writes the legend.** ⚽
+**⚽ Data tells the story. Football writes the legend. ⚽**
 
 </div>
